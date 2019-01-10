@@ -15,6 +15,12 @@ public static void main(String[] args) {
 	btnco.click();
 	WebElement Pwd = driver.findElement(By.name("fldPassword"));
 	Pwd.sendKeys("kalpana");
+	
+	WebElement Pwd1 = driver.findElement(By.name("fldPassword"));
+	Pwd.sendKeys("greens");
+	
+	driver.switchTo().frame(0);
+	
 	driver.quit();
 }
 }
